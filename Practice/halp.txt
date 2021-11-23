@@ -1,3 +1,0 @@
-need to go through installing Flask in PythonData environment
-relaunch mongodb
-rerun code in app.py to launch Flask (10.5.1)
