@@ -71,13 +71,13 @@ def featured_image(browser):
     # Add try/except for error handling
     try:
         # Find the relative image url
-        img_url_rel = img_soup.find('img', class_='fancybox-image').get('src')
+        img_url_rel = img_soup.find("img", class_="fancybox-image").get("src")
 
     except AttributeError:
         return None
 
     # Use the base url to create an absolute url
-    img_url = f'https://data-class-jpl-space.s3.amazonaws.com/JPL_Space/{img_url_rel}'
+    img_url = f'https://spaceimages-mars.com/{img_url_rel}'
 
     return img_url
 
